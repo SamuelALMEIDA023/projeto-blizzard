@@ -1,0 +1,20 @@
+{
+  "name": "samuel-gulp",
+  "version": "1.0.0",
+  "description": "um projeto criado com o curso codeboost",
+  "main": "index.js",
+  "author": "Samuel Almeida",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.22.17",
+    "@babel/preset-env": "^7.22.15",
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.66.1"
+  }
+}

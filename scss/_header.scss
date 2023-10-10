@@ -1,0 +1,428 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 9.6rem;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    z-index: 99;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .left-container {
+        display: flex;
+        align-items: center;
+        .logo {
+            position: relative;
+            &:after {
+                content: "";
+                width: 4.3rem;
+                border-top: 2px solid #00AEFF;
+                left: 0;
+                bottom: -29px;
+                position: absolute;
+            }
+        }
+        nav {
+            margin-left: 11.2rem;
+            ul {
+                display: flex;
+                align-items: center;
+                li {
+                    &:not(:first-child) {
+                        margin-left: 3.4rem;
+                    }
+                    a {
+                        display: flex;
+                        align-items: center;
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                        line-height: 2.1rem;
+                        img {
+                            margin-left: 1.4rem;
+                            transition: transform .3s;
+                        }
+                        &.active {
+                            color: $primary-default;
+                            img {
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .right-container {
+        display: flex;
+        align-items: center;
+        .btn {
+            &:not(:first-child) {
+                margin-left: 1.6rem;
+            }
+        }
+        .btn-mobile {
+            display: none;
+        }
+    }
+    @media(max-width: 991px) {
+        .left-container {
+            nav {
+                display: none;
+            }
+        }
+        .right-container {
+            .btn-mobile {
+                display: block;
+                margin-left: 8.9rem;
+                margin-left: 22.5rem;
+            }
+        }
+    }
+    @media(max-width: 560px) {
+        height: 8rem;
+        .left-container {
+            .logo {
+                width: 6.9rem;
+            }
+        }
+        .right-container {
+            .btn {
+                display: none;
+            }
+        }
+    }
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    background: linear-gradient(180deg, #020203 0%, rgba(14, 17, 23, 0.92) 96.35%, rgba(14, 17, 23, 0.90) 100%);
+    filter: box-shadow(0px 4px 4px 0px rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(6px);
+    width: 100%;
+    padding-top: 9.6rem;
+    opacity: 0;
+    transform: translateY(-100%);
+    pointer-events: none;
+    transition: all .3s;
+    &.active {
+        display: block;
+        opacity: 1;
+        transform: translateY(0%);
+        pointer-events: all;
+        transition: all .3s;
+    }
+    &.esportes {
+        .area-menu {
+            ul {
+                grid-template-columns: repeat(5, 1fr);
+                grid-gap: 6.4rem;
+                li {
+                    a {
+                        width: 100%;
+                        height: 23.7rem;
+                        .icon {
+                            width: 100%;
+                            height: 14.9rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .area-menu {
+        padding-top: 3.8rem;
+        padding-bottom: 5.5rem;
+        ul {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-gap: 2.8rem 3.2rem;
+            li {
+                a {
+                    width: 17.6rem;
+                    height: 17.6rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    .icon {
+                        width: 6.9rem;
+                        height: 6.9rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        margin-bottom: 8.6px;
+                    }
+                    span {
+                        display: block;
+                        text-align: center;
+                        color: #9D9D9D;
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                        line-height: 120%; 
+                    }
+                }
+            }
+
+        }
+    }
+    .footer-menu {
+        width: 100%;
+        height: 7rem;
+        background-color: rgba(21, 23, 27, 0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        ul {
+            display: flex;
+            align-items: center;
+            li {
+                &:not(:first-child) {
+                    margin-left: 6.4rem;
+                }
+                a {
+                    display: flex;
+                    align-items: center;
+                    span {
+                        color: #FFF;
+                        text-align: center;font-size: 1.6rem;font-weight: 600;line-height: 2.4rem;
+                        margin-left: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width: 991px){
+        z-index: 6000;
+        padding-top: 1rem;
+        &.esportes{
+          .area-menu{
+            ul{
+              grid-template-columns: repeat(4, 1fr);
+              grid-gap: 3.4rem;
+              li{
+                a{
+                  width: 100%;
+                  height: 20.7rem;
+                  .icon{
+                    width: 100%;
+                    height: 14.9rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .area-menu{
+          padding-top: 3.8rem;
+          padding-bottom: 5rem;
+          ul{
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 2rem 3rem;
+            li{
+              a{
+                width: 15.6rem;
+                height: 15.6rem;
+                .icon{
+                  width: 66.4px;
+                  height: 66.4px;
+                }
+              }
+            }
+          }
+        }
+      }
+    
+      @media(max-width: 800px){
+        .area-menu{
+          ul{
+            grid-gap: 1.5rem 2.5rem;
+            li{
+              a{
+                .icon{
+                  width: 60.4px;
+                  height: 60.4px;
+                }
+              }
+            }
+          }
+        }
+        .footer-menu{
+          ul{
+            li{
+              &:not(:first-child){
+                margin-left: 4.4rem;
+              }
+              a{  
+                span{
+                  font-size: 1.3rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    
+      @media(max-width: 768px){
+        &.esportes{
+          .area-menu{
+            ul{
+              grid-template-columns: repeat(3, 1fr);
+              grid-gap: 6rem;
+              li{
+                a{
+                  width: 100%;
+                  height: 20.7rem;
+                  .icon{
+                    width: 100%;
+                    height: 13.9rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .area-menu{
+          ul{
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1rem 2rem;
+            li{
+              a{
+                .icon{
+                  width: 55.4px;
+                  height: 55.4px;
+                }
+              }
+            }
+          }
+        }
+        .footer-menu{
+          display: none;
+        }
+      }
+    
+    @media(max-width: 560px){
+        &.esportes{
+          .area-menu{
+            ul{
+              grid-template-columns: repeat(2, 1fr);
+              li{
+                a{
+                  width: 100%;
+                  height: 15.7rem;
+                  .icon{
+                    width: 100%;
+                    height: 10.9rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .area-menu {
+          ul{
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 0.5rem 1.5rem;
+            li{
+              a{
+                .icon{
+                  width: 50.4px;
+                  height: 50.4px;
+                }
+              }
+            }
+          }
+        }
+        .footer-menu{
+          display: none;
+        }
+    }
+}
+
+.menu-mobile {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2022;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s;
+    &.active {
+        opacity: 1;
+        pointer-events: all;
+        transform: translateX(75%);
+    }
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 0;
+    }
+    aside {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 75%;
+        height: 100%;
+        background-color: #1f2025;
+        padding: 3rem;
+        transform: translateX(-100%);
+        transition: transform .3s;
+        .logo {
+            max-width: 15rem;
+            margin-bottom: 4rem;
+        }
+        ul {
+            li {
+                a {
+                    padding: 1.5rem 0;
+                    display: block;
+                    font-size: 1.8rem;
+                    display: flex;
+                    img {
+                        margin-left: 1.4rem;
+                    }
+                }
+            }
+        }
+        .btn-mobile-column {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 20rem;
+            .btn {
+                line-height: 5.4rem;
+            }
+            .btn-outline {
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}
+
+.menu-opened {
+    overflow: hidden;
+    .menu-mobile {
+        opacity: 1;
+        pointer-events: all;
+        aside {
+            transform: translateX(0%);
+        }
+    }
+}
+
