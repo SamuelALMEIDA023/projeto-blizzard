@@ -1,4 +1,4 @@
-![Cover](https://1drv.ms/i/s!AjJcqCwIa6sLgckxO4cPm0rR7QIFjQ?e=WvmSnd)
+![Cover](https://github.com/SamuelALMEIDA023/projeto-blizzard/assets/img-backpg.png)
 
 
 # projeto-blizzard
