@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/img-backpg.png)
+![Cover](https://user-images.githubusercontent.com/img-backpg.png)
 
 
 # projeto-blizzard
