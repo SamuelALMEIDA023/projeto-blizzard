@@ -10,3 +10,6 @@
 
 ## Resultado 
 Resultado final: https://projeto-blizzard-samuel.netlify.app/
+
+![image](https://github.com/SamuelALMEIDA023/projeto-blizzard/assets/134805776/59635773-0533-4f72-962a-3f3b3f28b365)
+
