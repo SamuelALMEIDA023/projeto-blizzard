@@ -1,4 +1,4 @@
-![Cover](https://github.com/SamuelALMEIDA023/projeto-blizzard/assets/img-backpg.png)
+![image](https://github.com/SamuelALMEIDA023/projeto-blizzard/assets/img-backpg.png)
 
 
 # projeto-blizzard
