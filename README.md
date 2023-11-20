@@ -1,4 +1,4 @@
-![imagem](https://1drv.ms/i/s!AjJcqCwIa6sLgckxO4cPm0rR7QIFjQ?e=WvmSnd)
+![cover](https://1drv.ms/i/s!AjJcqCwIa6sLgckxO4cPm0rR7QIFjQ?e=WvmSnd)
 
 
 # projeto-blizzard
