@@ -1,4 +1,4 @@
-![image]("C:\Users\milit\Downloads\img-backpg.png")
+![image](https://raw.githubusercontent.com/img-backpg.png)
 
 
 # projeto-blizzard
