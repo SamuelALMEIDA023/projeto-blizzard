@@ -1,4 +1,4 @@
-![Cover]("C:\Users\milit\Downloads\img-backpg.png")
+![image]("C:\Users\milit\Downloads\img-backpg.png")
 
 
 # projeto-blizzard
